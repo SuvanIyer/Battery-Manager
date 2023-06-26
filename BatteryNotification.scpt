@@ -1,3 +1,12 @@
+on getActiveApp()
+	set frontApp to path to frontmost application as text
+	--log "Current application: " & frontApp
+	-- Activate the previous application
+	activate frontApp
+	--log "Activated application: " & frontApp
+end getActiveApp
+
+
 repeat
 	set chargeState to do shell script "pmset -g batt | awk '{printf \"%s %s\\n\", $4,$5;exit}'"
 	set batteryPercent to do shell script "pmset -g batt | egrep -ow '([0-9]{1,3})[%]' | egrep -ow '[0-9]{1,3}'"
@@ -11,7 +20,6 @@ repeat
 			--to play sound before alert
 			do shell script ("afplay /System/Library/Sounds/Blow.aiff")
 			display alert " 🪫Battery Low" message "Battery Down to " & (currentBatteryStr) buttons {"Dismiss", "Snooze"} default button "Dismiss"
-			
 			
 			--giving up after 60 , The giving up after parameter specifies the number of seconds the dialog will automatically dismiss if no button is clicked.
 			
@@ -28,5 +36,6 @@ repeat
 			display alert "🔋Battry Charged" message "Battery Charged to " & (currentBatteryStr)
 		end if
 	end considering
+	getActiveApp()
 	delay (delayDuration * 60)
 end repeat
