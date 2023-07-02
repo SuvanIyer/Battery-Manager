@@ -44,7 +44,7 @@ To use the Battery Alert Script, follow these steps:
 ### For the .plist 
 1. Open a text editor of your choice, such as TextEdit or a code editor like Visual Studio Code.
 2. Create a new file and save it with a .plist file extension. 
-3. Copy the code from [batteryAlert.plist](https://github.com/SuvanIyer/Battery-Manager/blob/Version1/batteryAlert.plist) and paste it in the file. Make the necessary changes to the file which may include changing the path to your script file.
+3. Copy the code from [batteryAlert.plist](https://github.com/SuvanIyer/Battery-Manager/blob/main/batteryAlert.plist) and paste it in the file. Make the necessary changes to the file which may include changing the path to your script file.
 4. Save the file in ```~/Library/LaunchAgents/```
 
 ### Terminal
@@ -101,7 +101,7 @@ I would also like to acknowledge the following resources that were instrumental 
 
 - [Resource 1](https://gist.github.com/brandon1024/74b81564aa0b91aa8287faaa175593e6)
 - [Resource 2](https://jmmoloney.com/blog/2019/02/06/batteryscript)
-- [Resource 2](https://stackoverflow.com/questions/53997451/script-to-play-a-warning-when-battery-level-is-under-a-threshold-in-macos)
+- [Resource 3](https://stackoverflow.com/questions/53997451/script-to-play-a-warning-when-battery-level-is-under-a-threshold-in-macos)
 
 Thank you to the open-source community for providing valuable inspiration and sharing knowledge that helped in the creation of this script.
 
