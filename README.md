@@ -29,7 +29,7 @@ Have you ever been caught off guard by your Mac's battery draining rapidly or fo
 ## Installation
 To use the Battery Alert Script, follow these steps:
 
-### For the Script
+  ### For the Script
 1. Make sure you have AppleScript Editor installed on your Mac. AppleScript Editor comes pre-installed on macOS.
 2. Download or copy the script code.
 3. Open AppleScript Editor. You can find it in the "Utilities" folder within the "Applications" folder.
@@ -41,7 +41,7 @@ To use the Battery Alert Script, follow these steps:
 
 8. Place the script in ```~/Applications``` 
 
-### For the .plist 
+  ### For the .plist 
 1. Open a text editor of your choice, such as TextEdit or a code editor like Visual Studio Code.
 2. Create a new file and save it with a .plist file extension. 
 3. Copy the code from [batteryAlert.plist](https://github.com/SuvanIyer/Battery-Manager/blob/main/batteryAlert.plist) and paste it in the file. Make the necessary changes to the file which may include changing the path to your script file.
